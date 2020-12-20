@@ -7,7 +7,7 @@ div.innerHTML = `
 <img src="${png}">
 `
 
-// 懒人模块
+// 懒人模块啊啊啊
 const button = document.createElement('button')
 button.innerText = 'LanJiaZai'
 button.onclick = () => {
