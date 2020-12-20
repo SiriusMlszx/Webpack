@@ -19,8 +19,15 @@ module.exports = {
             ...base.module.rules,
             {
                 test: /\.css$/i,
-                use: [MiniCssExtractPlugin.loader, 'css-loader'],
+                use: [{
+                        loader: MiniCssExtractPlugin.loader,
+                        options: {
+                            publicPath: '../',
+                        },
+                    },
+                    'css-loader',
+                ],
             }
         ]
-    },
+    }
 };
